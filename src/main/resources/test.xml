@@ -1,0 +1,22 @@
+<contain>
+    <!--name对应客户名称-->
+    <!--keyWord对应关键字-->
+    <!--remarks对应备注-->
+    <!--type对应客人类别-->
+    <!--每一个qa为一问一答-->
+    <!--c客户发言 s客服发言-->
+    <!-- <a1><a2>为对一问的多个回答 -->
+    <record>
+        <cusinfo>
+            <name>null</name>
+            <keyword>null</keyword>
+            <remarks>null</remarks>
+            <type>无效</type>
+        </cusinfo>
+        <diaRecord>
+            <qa><cq>你好，请问中国留学生在墨尔本能买二手房吗？</cq><sa>您好，我公司只进行新房购置，没有二手房。</sa></qa>
+            <qa><sq>您好，我公司只进行新房购置，没有二手房。</sq><ca>谢了。</ca></qa>
+            <qa><cq>谢了。</cq><sa>不客气。</sa></qa>
+        </diaRecord>
+    </record>
+</contain>

@@ -1,0 +1,124 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.uestc</groupId>
+  <artifactId>robot</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>robot Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+<!--   	<spring.version>3.2.2.RELEASE</spring.version> -->
+  	<spring.version>4.2.5.RELEASE</spring.version>
+    <slf4j_version>1.7.21</slf4j_version>
+  </properties>
+
+  <dependencies>
+   	<dependency>
+	    <groupId>org.codehaus.jackson</groupId>
+	    <artifactId>jackson-mapper-asl</artifactId>
+	    <version>1.9.13</version>
+	</dependency>
+	<dependency>
+	    <groupId>com.thoughtworks.xstream</groupId>
+	    <artifactId>xstream</artifactId>
+	    <version>1.4.9</version>
+	</dependency>  
+    <dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>3.1.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpclient</artifactId>
+	    <version>4.5.2</version>
+	</dependency>
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.30</version>
+	</dependency>
+<!-- 	<dependency> -->
+<!-- 	    <groupId>org.springframework</groupId> -->
+<!-- 	    <artifactId>spring-webmvc</artifactId> -->
+<!-- 	    <version>${spring.version}</version> -->
+<!-- 	</dependency> -->
+<!-- 	<dependency> -->
+<!-- 	    <groupId>org.springframework</groupId> -->
+<!-- 	    <artifactId>spring-web</artifactId> -->
+<!-- 	    <version>${spring.version}</version> -->
+<!-- 	</dependency> -->
+<!-- 	<dependency> -->
+<!-- 	    <groupId>org.springframework</groupId> -->
+<!-- 	    <artifactId>spring-beans</artifactId> -->
+<!-- 	    <version>${spring.version}</version> -->
+<!-- 	</dependency> -->
+<!-- 	<dependency> -->
+<!-- 	    <groupId>org.springframework</groupId> -->
+<!-- 	    <artifactId>spring-context</artifactId> -->
+<!-- 	    <version>${spring.version}</version> -->
+<!-- 	</dependency>   -->
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.12</version>
+	</dependency>
+	
+	<!-- 杨彬 -->
+   <dependency>
+       <groupId>dom4j</groupId>
+       <artifactId>dom4j</artifactId>
+       <version>1.6.1</version>
+   </dependency>
+   <dependency>
+       <groupId>com.hankcs</groupId>
+       <artifactId>hanlp</artifactId>
+       <version>portable-1.2.10</version>
+   </dependency>
+   <dependency>
+       <groupId>jaxen</groupId>
+       <artifactId>jaxen</artifactId>
+       <version>1.1.6</version>
+   </dependency>
+   <dependency>
+       <groupId>org.apache.jena</groupId>
+       <artifactId>jena-arq</artifactId>
+       <version>3.1.0</version>
+   </dependency>
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-api</artifactId>
+       <version>${slf4j_version}</version>
+   </dependency>
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-simple</artifactId>
+       <version>${slf4j_version}</version>
+   </dependency>
+   <dependency>
+       <groupId>xml-apis</groupId>
+       <artifactId>xml-apis</artifactId>
+       <version>1.4.01</version>
+   </dependency>
+<!--    <dependency> -->
+<!--        <groupId>edu.stanford.nlp</groupId> -->
+<!--        <artifactId>stanford-corenlp</artifactId> -->
+<!--        <version>3.6.0</version> -->
+<!--    </dependency> -->
+	
+  </dependencies>
+  <build>
+  	 <plugins>
+  	  <!-- maven打包时用于跳过Test -->  
+      <plugin>  
+        <groupId>org.apache.maven.plugins</groupId>  
+        <artifactId>maven-surefire-plugin</artifactId>  
+        <configuration>  
+          <skip>true</skip>  
+        </configuration>  
+      </plugin>  
+    </plugins>  
+    <finalName>robot</finalName>
+  </build>
+</project>

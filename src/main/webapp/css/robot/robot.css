@@ -1,0 +1,150 @@
+body {
+	OVERFLOW: auto;
+	margin: 5px; 
+	padding: 0px 0px 0px 0px; 
+	border: 0px;font-family: 微软雅黑; 
+	font-size: 12px;
+	background-color: #ababab;
+	scrollbar-arrow-color:yellow;scrollbar-base-color:lightsalmon;
+	background-image: url(/robot/img/万国置地4.png);
+	background-repeat: repeat;
+	background-size: 50%;
+}
+td {
+	font-size: 12px;
+}
+p { 
+	margin-top:5px;
+	margin-bottom:0px;
+	font-family: 微软雅黑; 
+	font-size: 12px;
+}
+li { 
+	margin-top:5px;
+	margin-bottom:0px;
+	font-family: 微软雅黑; 
+	font-size: 12px;
+}
+
+.colImg img {
+	width: 100%;
+}
+
+.sysfont{font-family: 微软雅黑; font-size: 12px;color: Salmon;}
+.operatornamefont{font-family: 微软雅黑; font-size: 12px;color: Blue;}
+.operatorfont{font-family: 微软雅黑; font-size: 12px;color: Black;}
+.clientnamefont{font-family: 微软雅黑; font-size: 12px;color: Green;}
+.clientfont{font-family: 微软雅黑; font-size: 12px;color: Purple;}
+.clientnamefont1{font-family: 微软雅黑; font-size: 12px;color: Green;}
+.clientfont1{font-family: 微软雅黑; font-size: 12px;color: Purple;}
+.trackfont{font-family: 微软雅黑; font-size: 9pt;color: DarkCyan;}
+.head1 {color: DarkCyan; font-weight: bold; }
+
+.topColHeight {
+	height: 50px;
+}
+
+#topColMiddle {
+	background-color: #2c8ef1;
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;	
+}
+
+#talkWindow {
+	height: 500px;
+	overflow: auto;
+	padding-top: 10px;
+	background-color: #eff0f2;
+}
+
+#talkWindowCol {
+	margin-bottom: 20px;
+}
+
+#showWindow {
+	height: 535px;
+	background-color: #eff0f2;
+	border: 1px solid #cccccc;
+	border-top: 0px;
+	-webkit-border-radius: 0 0 10px 0;
+	-moz-border-radius: 0 0 10px 0;
+	border-radius: 0 0 10px 0;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.iconImg {
+	width: 75%;
+	height: 75%;	
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;	
+}
+
+.colIconImg {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.colImg {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#myContainer {
+	padding-top: 5%;
+}
+
+#inputTextWindow {	
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 0 0 0 10px;
+	-moz-border-radius: 0 0 0 10px;
+	border-radius: 0 0 0 10px;
+}
+
+@media screen and (max-width: 991px) {
+	#showWindow {
+		display: none;
+	}
+	
+	#servicePhone {
+		display: none;
+	}
+	
+	#topColLeft {
+		display: none:
+	}
+	
+	#topColRight {
+		display: none;
+	}
+	
+	#myContainer {
+		padding-top: 0%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#showWindow {
+		display: none;
+	}
+	
+	#servicePhone {
+		display: none;
+	}
+	
+	#topColLeft {
+		display: none:
+	}
+	
+	#topColRight {
+		display: none;
+	}
+	
+	#myContainer {
+		padding-top: 0%;
+	}
+}
+

@@ -1,0 +1,20 @@
+<List>
+  <database.DatasourceConfigBean>
+    <databaseType>Mysql</databaseType>
+    <databasePoolName>MysqlDataSource</databasePoolName>
+    <driver>com.mysql.jdbc.Driver</driver>
+    <url>jdbc:mysql://192.168.91.201:3306/robot</url>
+    <username>robot</username>
+    <password>robot</password>
+    <maxConnectionCount>30</maxConnectionCount>
+  </database.DatasourceConfigBean>
+  <database.DatasourceConfigBean>
+    <databaseType>SqlServer</databaseType>
+    <databasePoolName>SqlServerDataSource</databasePoolName>
+    <driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver>
+    <url>jdbc:sqlserver://192.168.91.201:1433;databaseName=robot;</url>
+    <username>robot</username>
+    <password>robot</password>
+    <maxConnectionCount>30</maxConnectionCount>
+  </database.DatasourceConfigBean>
+</List>
