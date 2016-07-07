@@ -37,8 +37,8 @@ public class Controller extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-//		Robot robot = SemanticNetRobot.getInstance();
-		Robot robot = TuringRobot.getInstance();
+		Robot robot = SemanticNetRobot.getInstance();
+//		Robot robot = TuringRobot.getInstance();
 		out.write(robot.getReply(customerContent, request.getSession().getId()));
 		out.flush();
 		out.close();
