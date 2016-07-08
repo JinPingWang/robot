@@ -42,15 +42,15 @@ public class StringSimilarity {
             }  
         }
         //使用到转义字符\"
-        System.out.println("字符串\"" + str1 + "\"与\"" + str2 + "\"的比较");  
+//        System.out.println("字符串\"" + str1 + "\"与\"" + str2 + "\"的比较");  
         //取数组右下角的值，同样不同位置代表不同字符串的比较  
-        System.out.println("差异步骤：" + dif[len1][len2]);
+//        System.out.println("差异步骤：" + dif[len1][len2]);
         //两个字符串中，最长字符串长度
         int StringMaxLength = Math.max(str1.length(),str2.length());
-        System.out.println("最长字符串长度：" + StringMaxLength);
+//        System.out.println("最长字符串长度：" + StringMaxLength);
         //计算相似度  
         float similarity = 1 - (float)dif[len1][len2] / (float)StringMaxLength;  
-        System.out.println("相似度：" + similarity);
+//        System.out.println("相似度：" + similarity);
         return similarity;
     }  
   
@@ -70,7 +70,7 @@ public class StringSimilarity {
         //String str1 = "今天星期四，我要去你家";
         String str1 = "澳洲的房子贵不贵";  
         String str2 = "主要是针对海外房产投资趋势等。当然是包括澳洲房产介绍";
-        System.out.println("相似度：" + getStringSimilarity(str1,str2));
+//        System.out.println("相似度：" + getStringSimilarity(str1,str2));
     } 
   
 }  

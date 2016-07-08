@@ -26,10 +26,10 @@ public class BestAnswer {
 		MatlabBP myAnn = null;
 		try{
 			MatlabInput = new MWNumericArray(Matrix, MWClassID.DOUBLE);
-			System.out.println("输入Matlab的ANN训练模型的矩阵为： " + MatlabInput);
+//			System.out.println("输入Matlab的ANN训练模型的矩阵为： " + MatlabInput);
 			myAnn = new MatlabBP();
 			result = myAnn.predict0703(1,MatlabInput);
-	   	    System.out.println("经过Matlab的ANN模型计算后，结果为： " + result[0]);
+//	   	    System.out.println("经过Matlab的ANN模型计算后，结果为： " + result[0]);
 	   	    for(int i=1;i<=answer_num;i++){
 	       	    double res = ((MWNumericArray) result[0]).getDouble(i);
 	       	    if(res > MAX){
@@ -57,18 +57,18 @@ public class BestAnswer {
 		{
 			for(int j=0;j<temp[0].length;j++)
 			{
-				System.out.print(temp[i][j] + "  ");
+//				System.out.print(temp[i][j] + "  ");
 			}
-			System.out.println();
-			System.out.println();
+//			System.out.println();
+//			System.out.println();
 		}
 		int best_answer_index = BestAnswer.getBestAnswerIndex(temp);
-		System.out.println("*************当前的问题为*******************");
-		System.out.println(question.getQStr());
-		System.out.println("*************公布最佳答案*******************");
+//		System.out.println("*************当前的问题为*******************");
+//		System.out.println(question.getQStr());
+//		System.out.println("*************公布最佳答案*******************");
 		if(best_answer_index == -1)
 		{
-			System.out.println("ERROR !!!    获取最佳答案失败，下标为-1");
+//			System.out.println("ERROR !!!    获取最佳答案失败，下标为-1");
 			return "";
 		}
 		else if(best_answer_index == -2)
@@ -78,7 +78,7 @@ public class BestAnswer {
 		}
 		else
 		{
-			System.out.println(answers.get(best_answer_index).getAStr());
+//			System.out.println(answers.get(best_answer_index).getAStr());
 			return answers.get(best_answer_index).getAStr();
 		}
 	}
@@ -180,8 +180,8 @@ public class BestAnswer {
 		answers.add(A11);
 		
 		String return_answer = BestAnswer.getBestAnswerString(question,answers);
-		System.out.println("**********main函数里的测试***********");
-		System.out.println("回答为：   " + return_answer);
+//		System.out.println("**********main函数里的测试***********");
+//		System.out.println("回答为：   " + return_answer);
 	}
 	
 	

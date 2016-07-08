@@ -26,7 +26,6 @@ public class Controller extends HttpServlet {
 	@Override
 	public void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException{
 		String customerContent = request.getParameter("customerContent");
-		System.out.println(customerContent);				
 		response.setCharacterEncoding("UTF-8");
 		PrintWriter out =response.getWriter();
 			

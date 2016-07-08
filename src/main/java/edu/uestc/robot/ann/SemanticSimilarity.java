@@ -97,7 +97,7 @@ public class SemanticSimilarity {
 	    	    return null ;
 	        }
 	        //分词后
-	        System.out.println( "str分词后：" + str1 );
+//	        System.out.println( "str分词后：" + str1 );
 	    }catch(IOException e1){
 		    System.out.println();
 	    }
@@ -115,8 +115,8 @@ public class SemanticSimilarity {
     	//分词
     	Vector<String> vector1 = participle(str1);
     	Vector<String> vector2 = participle(str2);
-		System.out.println(vector1);
-		System.out.println(vector2);
+//		System.out.println(vector1);
+//		System.out.println(vector2);
 		//获取计算后的语义相似度
 		double sim = 0 ;
 		try{
@@ -124,7 +124,7 @@ public class SemanticSimilarity {
 		}catch(Exception e){
 			System.out.println( e.getMessage() );
 		}
-		System.out.println("相似度：" + sim);
+//		System.out.println("相似度：" + sim);
 		return sim;
     }
     
@@ -132,7 +132,7 @@ public class SemanticSimilarity {
 	public static void main(String[] args) {
 		String str1 = "请问房价多少钱一平米";
 		String str2 = "请问您是打算购买公寓还是别墅呢？";
-		System.out.println("相似度b：" + getSemanticSimilarity(str1,str2));
+//		System.out.println("相似度b：" + getSemanticSimilarity(str1,str2));
 	}
 	
 

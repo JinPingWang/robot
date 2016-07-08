@@ -129,7 +129,7 @@ public class RoughlyMatch {
             } catch (DocumentException e) {
                 e.printStackTrace();
             }
-            System.out.println(matches.toString());
+//            System.out.println(matches.toString());
         }
 
     }
