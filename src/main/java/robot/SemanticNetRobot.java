@@ -61,7 +61,7 @@ public class SemanticNetRobot implements Robot {
 		 * 三：调用程强机器学习接口，将模糊答案对象传递给这个接口，得到最优答案
 		 */
 		String result = BestAnswer.getBestAnswerString(questionBean, answerBeans);
-		
+			
 		/**
 		 * 四：如果最优答案为null，则调用刘爽黄为的主义网络，构造答案
 		 */

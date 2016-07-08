@@ -29,15 +29,9 @@ public class Controller extends HttpServlet {
 		System.out.println(customerContent);				
 		response.setCharacterEncoding("UTF-8");
 		PrintWriter out =response.getWriter();
-		
-		try {
-			Thread.sleep(600);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}		
-//		Robot robot = SemanticNetRobot.getInstance();
-		Robot robot = TuringRobot.getInstance();
+			
+		Robot robot = SemanticNetRobot.getInstance();
+//		Robot robot = TuringRobot.getInstance();
 		out.write(robot.getReply(customerContent, request.getSession().getId()));
 		out.flush();
 		out.close();
