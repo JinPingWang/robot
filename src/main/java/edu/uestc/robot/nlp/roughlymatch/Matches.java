@@ -13,6 +13,8 @@ public class Matches {
     public ArrayList<String> matchedQuestionsOntology;
     public ArrayList<String> matchedAnswersOntology;
     public ArrayList<Double> recallRates;
+    public ArrayList<Integer> matchedOntoNums;
+    public ArrayList<Integer> matchedOntoCityNums;
 
     public String getUserQuestion() {
         return userQuestion;

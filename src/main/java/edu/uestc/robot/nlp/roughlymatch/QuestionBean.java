@@ -28,4 +28,8 @@ public class QuestionBean {
     public void setQOntology(ArrayList<String> QOntology) {  
         this.QOntology = QOntology;  
     }  
+    @Override
+    public String toString() {
+    	return this.QStr + ", QOntology" + this.QOntology.toString();
+    }
 }

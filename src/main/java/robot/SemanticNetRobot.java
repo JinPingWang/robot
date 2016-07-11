@@ -39,6 +39,7 @@ public class SemanticNetRobot implements Robot {
 		return semanticNetRobot;
 	}
 	
+	@SuppressWarnings("unused")
 	@Override
 	public String getReply(String content, HttpSession userSession) throws IOException {
 		// TODO Auto-generated method stub
@@ -73,8 +74,7 @@ public class SemanticNetRobot implements Robot {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-		
+				
 		/**
 		 * 三：调用程强机器学习接口，将模糊答案对象传递给这个接口，得到最优答案
 		 */
@@ -84,23 +84,26 @@ public class SemanticNetRobot implements Robot {
 		}
 		else{
 			if(lastOntology != null){
-				try {
-					Matches matches = roughlyMathc.roughlyMatch(content, questionBean, answerBeans);
-				} catch (DocumentException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				List<AnswerBean> answerBeanList = BestAnswer.getAnswerBeanList(questionBean, answerBeans);
+//				try {
+//					Matches matches = roughlyMathc.roughlyMatch(content, questionBean, answerBeans);
+//					List<AnswerBean> answerBeanList = BestAnswer.getBestAnswerArrayList(questionBean, answerBeans, 0.2d);
+//					result = getAnswer(lastOntology, answerBeanList);
+//				} catch (DocumentException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+				List<AnswerBean> answerBeanList = BestAnswer.getBestAnswerArrayList(questionBean, answerBeans, 0.2d);
 				result = getAnswer(lastOntology, answerBeanList);
 			}
 			else{
-				try {
-					Matches matches = roughlyMathc.roughlyMatch(content, questionBean, answerBeans);
-				} catch (DocumentException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
 				result = BestAnswer.getBestAnswerString(questionBean, answerBeans);
+//				try {
+//					Matches matches = roughlyMathc.roughlyMatch(content, questionBean, answerBeans);
+//					result = BestAnswer.getBestAnswerString(questionBean, answerBeans);
+//				} catch (DocumentException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
 			}
 		}
 			

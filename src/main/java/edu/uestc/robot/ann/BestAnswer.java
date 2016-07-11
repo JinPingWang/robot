@@ -54,9 +54,59 @@ public class BestAnswer {
 	
 
 
-    public static List<AnswerBean> getAnswerBeanList(QuestionBean question,ArrayList<AnswerBean> answers){
-    	return null;
-    }
+	public static ArrayList<AnswerBean> getBestAnswerArrayList(QuestionBean question,ArrayList<AnswerBean> answers,double yuzhi){
+		System.out.println("entry"+answers.get(0).getQStr()+"\t"+answers.get(0).getAStr()+"\t"+answers.get(0).getAOntology());
+		
+		double[][] Matrix = CreateMatrix.getMatrix(question,answers);
+		int answer_num = Matrix[0].length;
+		double MAX = 0;
+		int best_answer_index = -1;
+		MWNumericArray MatlabInput = null;
+		Object[] result = null;
+		MatlabBP myAnn = null;
+		ArrayList<Double> match_rate = new ArrayList<Double>();
+		ArrayList<AnswerBean> first_answers = new ArrayList<AnswerBean>();
+		try{
+			MatlabInput = new MWNumericArray(Matrix, MWClassID.DOUBLE);
+			System.out.println("输入Matlab的ANN训练模型的矩阵为： " + MatlabInput);
+			myAnn = new MatlabBP();
+			result = myAnn.predict0703(1,MatlabInput);
+	   	    System.out.println("经过Matlab的ANN模型计算后，结果为： " + result[0]);
+	   	    for(int i=1;i<=answer_num;i++){
+	       	    double res = ((MWNumericArray) result[0]).getDouble(i);
+		       	    if(res > MAX){
+		       	    	MAX = res;
+		       	    }
+//	       	    	match_rate.add(res);
+//	       	    	first_answers.add(answers.get(i-1));
+	   	    }
+	   	    for(int i=1;i<=answer_num;i++){
+	       	    double res = ((MWNumericArray) result[0]).getDouble(i);
+	   	    	if(res > yuzhi && MAX-res < 0.3){
+	   	    		first_answers.add(answers.get(i-1));
+	   	    	}
+	   	    }
+	   	    /**********打印中间List,看看结果***********/
+	   	    for(int i=0;i<match_rate.size();i++){
+	   	    	System.out.println(match_rate.get(i) + "   " + first_answers.get(i).getQStr() + "   " + first_answers.get(i).getAStr());
+	   	    }
+	   	    /**********对匹配度进行排序***********/
+//	   	 quickSort(array,0,array.length-1);
+	   	    
+	   	    if(MAX < yuzhi)
+	   	    	best_answer_index = -2;
+		}catch (Exception e){
+            System.out.println("Exception: " + e.toString());
+        }finally{
+            MWArray.disposeArray(MatlabInput);
+            MWArray.disposeArray(result);
+            if (myAnn != null)
+            	myAnn.dispose();
+        }
+		//如果返回-1或者-2表示获取最好答案下标失败，否则正常的话，应该返回0~9之间的数字
+		System.out.println("返回答案的下标为： " + best_answer_index);
+		return first_answers;
+	}
 	
 	public static String getBestAnswerString(QuestionBean question,ArrayList<AnswerBean> answers){
 		double[][] temp = CreateMatrix.getMatrix(question,answers);
