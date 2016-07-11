@@ -13,7 +13,7 @@ public class Test05 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String content = "投资";
+		String content = "多伦多";
 		RoughlyMatch roughlyMathc = new RoughlyMatch();
 		QuestionBean questionBean = new QuestionBean("", new ArrayList<String>());
 		ArrayList<AnswerBean> answerBeans = new ArrayList<AnswerBean>();
@@ -24,9 +24,9 @@ public class Test05 {
 			e.printStackTrace();
 		}
 		System.out.println(answerBeans.size());
-		System.out.println(answerBeans.get(0).getQStr());
-		System.out.println(answerBeans.get(0).getAStr());
-		System.out.println(answerBeans.get(0).getAOntology());
+		System.out.println(answerBeans.get(1).getQStr());
+		System.out.println(answerBeans.get(1).getAStr());
+		System.out.println(answerBeans.get(1).getAOntology());
 		
 	}
 

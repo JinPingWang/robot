@@ -13,10 +13,11 @@ public class AnswerBean implements Comparable<AnswerBean> {
 
     }
     //构造方法
-    public AnswerBean(String AStr,String QStr,ArrayList<String> QOntology){
+    public AnswerBean(String AStr,String QStr,ArrayList<String> QOntology, ArrayList<String> AOntology){
         this.AStr = AStr;
         this.QStr = QStr;
         this.QOntology = QOntology;
+        this.AOntology = AOntology;
     }
 
     public ArrayList<String> getAOntology() {
@@ -60,8 +61,8 @@ public class AnswerBean implements Comparable<AnswerBean> {
     public ArrayList<String> getQOntology() {
         return QOntology;
     }
-    public void setAOntology(ArrayList<String> QOntology) {
-        this.QOntology = QOntology;
+    public void setAOntology(ArrayList<String> AOntology) {
+        this.AOntology = AOntology;
 
     }
     public int compareTo(AnswerBean answerBean) {

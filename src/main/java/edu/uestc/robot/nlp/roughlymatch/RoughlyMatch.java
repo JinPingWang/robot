@@ -129,7 +129,7 @@ public class RoughlyMatch {
         int length = matches.matchedAnswers.size();
         if (length > 0) {
             for (int i = 0; i < length; ++i) {
-                AnswerBean answerBean = new AnswerBean("", "", new ArrayList<String>());
+                AnswerBean answerBean = new AnswerBean("", "", new ArrayList<String>(), new ArrayList<>());
                 answerBean.setQStr(matches.matchedQuestions.get(i));
                 answerBean.setAStr(matches.matchedAnswers.get(i));
                 answerBean.setMatchedOntoNum(matches.matchedOntoNums.get(i));

@@ -92,7 +92,7 @@ public class SemanticNetRobot implements Robot {
 //					// TODO Auto-generated catch block
 //					e.printStackTrace();
 //				}
-				List<AnswerBean> answerBeanList = BestAnswer.getBestAnswerArrayList(questionBean, answerBeans, 0.2d);
+				List<AnswerBean> answerBeanList = BestAnswer.getBestAnswerArrayList(questionBean, answerBeans, 0.5d);
 				result = getAnswer(lastOntology, answerBeanList);
 			}
 			else{
