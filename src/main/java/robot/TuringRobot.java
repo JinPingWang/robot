@@ -3,6 +3,8 @@ package robot;
 import java.io.IOException;
 import java.util.HashMap;
 
+import javax.servlet.http.HttpSession;
+
 import json.Json;
 import tuling.TuringRequestBean;
 import tuling.TuringResponseBean;
@@ -33,13 +35,13 @@ public class TuringRobot implements Robot {
 	}
 	
 	@Override	
-	public String getReply(String content, String userId) throws IOException {
+	public String getReply(String content, HttpSession userSession) throws IOException {
 		String reply = contentMapReply.get(content); 
 		if(reply != null){
 			return reply;
 		}
 
-		TuringRequestBean turingBean = new TuringRequestBean("ae35e0925aa475708cd0f1892ac8c244", content, "1");
+		TuringRequestBean turingBean = new TuringRequestBean("ae35e0925aa475708cd0f1892ac8c244", content, userSession.getId());
 		Json json = new Json();
 		String jsonString = json.getJson(turingBean);
 		

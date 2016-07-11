@@ -31,7 +31,7 @@ public class Controller extends HttpServlet {
 			
 		Robot robot = SemanticNetRobot.getInstance();
 //		Robot robot = TuringRobot.getInstance();
-		out.write(robot.getReply(customerContent, request.getSession().getId()));
+		out.write(robot.getReply(customerContent, request.getSession()));
 		out.flush();
 		out.close();
 	}

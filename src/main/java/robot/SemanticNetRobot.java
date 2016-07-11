@@ -3,6 +3,9 @@ package robot;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
 
 import org.dom4j.DocumentException;
 
@@ -37,12 +40,26 @@ public class SemanticNetRobot implements Robot {
 	}
 	
 	@Override
-	public String getReply(String content, String useId) throws IOException {
+	public String getReply(String content, HttpSession userSession) throws IOException {
 		// TODO Auto-generated method stub
 		
 		/**
-		 * 一：保存语义网络需要的数据
+		 * 一：得到上一个问题的本体，并保存语义网络需要的数据
 		 */
+		List<String> lastOntology = (List<String>) userSession.getAttribute("lastOntology");
+		{
+			RoughlyMatch roughlyMathc = new RoughlyMatch();
+			QuestionBean questionBean = new QuestionBean("", new ArrayList<String>());
+			ArrayList<AnswerBean> answerBeans = new ArrayList<AnswerBean>();
+			try {
+				Matches matches = roughlyMathc.roughlyMatch(content, questionBean, answerBeans);
+			} catch (DocumentException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}		
+			List<String> ontology = questionBean.getQOntology();
+			userSession.setAttribute("lastOntology", ontology);			
+		}
 		
 		/**
 		 * 二：调用杨彬自然语言接口，得到模糊答案对象
@@ -56,16 +73,35 @@ public class SemanticNetRobot implements Robot {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 		
 		/**
 		 * 三：调用程强机器学习接口，将模糊答案对象传递给这个接口，得到最优答案
 		 */
 		String result = "";
 		if(answerBeans.size() == 0){
-			return "请问您的联系方式是？因为我这边是在线客服 信息掌握的不是很全面 可以安排专业顾问给您详细推荐一下"; 
+			return "请问您的微信号是？因为我这边是在线客服 信息掌握的不是很全面 可以安排专业顾问给您详细推荐一下"; 
 		}
 		else{
-			result = BestAnswer.getBestAnswerString(questionBean, answerBeans);
+			if(lastOntology != null){
+				try {
+					Matches matches = roughlyMathc.roughlyMatch(content, questionBean, answerBeans);
+				} catch (DocumentException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				List<AnswerBean> answerBeanList = BestAnswer.getAnswerBeanList(questionBean, answerBeans);
+				result = getAnswer(lastOntology, answerBeanList);
+			}
+			else{
+				try {
+					Matches matches = roughlyMathc.roughlyMatch(content, questionBean, answerBeans);
+				} catch (DocumentException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				result = BestAnswer.getBestAnswerString(questionBean, answerBeans);
+			}
 		}
 			
 		/**
@@ -76,11 +112,30 @@ public class SemanticNetRobot implements Robot {
 		 * 五：将答案返回
 		 */
 		if(result.length() == 0){
-			return "请问您的联系方式是？因为我这边是在线客服 信息掌握的不是很全面 可以安排专业顾问给您详细推荐一下";
+			return "您好！您可以留下您的联系方式 稍后我这边会转接到相关部门 如果有需要会给您打电话";
 		}
 		else{
 			return result;
 		}
 	}
 
+
+	
+	private String getAnswer(List<String> lastOntology, List<AnswerBean> answerBeanList){
+		int countMax=0;
+		int index = 0;
+		for(int loop=0; loop<answerBeanList.size(); loop++){
+			int count = 0;
+			for(String ontology : lastOntology){
+				if(answerBeanList.get(loop).getAOntology().contains(ontology)){
+					count++;
+				}
+			}
+			if(count > countMax){
+				countMax = count;
+				index = loop;
+			}
+		}
+		return answerBeanList.get(index).getAStr();
+	}
 }

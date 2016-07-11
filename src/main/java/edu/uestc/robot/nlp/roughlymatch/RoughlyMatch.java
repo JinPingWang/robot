@@ -22,7 +22,7 @@ public class RoughlyMatch {
         SAXReader saxReader = new SAXReader();
         return saxReader.read(inputStream);
     }
-
+    
 //    public readSegResults
     public Matches roughlyMatch(String question, QuestionBean questionBean, ArrayList<AnswerBean> answerBeans) throws DocumentException {
         Matches matches = new Matches();

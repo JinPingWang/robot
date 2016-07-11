@@ -6,6 +6,7 @@ public class AnswerBean {
 	private String AStr;
 	private String QStr;
 	private ArrayList<String> QOntology;
+	private ArrayList<String> AOntology;
 	public AnswerBean() {
 
     }
@@ -33,6 +34,9 @@ public class AnswerBean {
     public ArrayList<String> getQOntology() {  
         return QOntology;  
     }  
+	public ArrayList<String> getAOntology() {
+		return AOntology;
+	}
     public void setAOntology(ArrayList<String> QOntology) {  
         this.QOntology = QOntology;  
     }  

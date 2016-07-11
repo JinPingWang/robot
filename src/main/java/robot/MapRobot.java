@@ -2,6 +2,8 @@ package robot;
 
 import java.util.HashMap;
 
+import javax.servlet.http.HttpSession;
+
 public class MapRobot implements Robot {
 	HashMap<String, String> contentMapReply;
 	private static MapRobot mapRobot;
@@ -27,7 +29,7 @@ public class MapRobot implements Robot {
 	}
 	
 	@Override
-	public String getReply(String content, String userId) {
+	public String getReply(String content, HttpSession userSession) {
 		// TODO Auto-generated method stub
 		String reply = contentMapReply.get(content); 
 		if(reply != null){

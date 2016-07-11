@@ -2,6 +2,7 @@ package edu.uestc.robot.ann;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import org.dom4j.DocumentException;
@@ -50,6 +51,12 @@ public class BestAnswer {
 		//如果返回-1或者-2表示获取最好答案下标失败，否则正常的话，应该返回0~9之间的数字
 		return best_answer_index;
 	}
+	
+
+
+    public static List<AnswerBean> getAnswerBeanList(QuestionBean question,ArrayList<AnswerBean> answers){
+    	return null;
+    }
 	
 	public static String getBestAnswerString(QuestionBean question,ArrayList<AnswerBean> answers){
 		double[][] temp = CreateMatrix.getMatrix(question,answers);
