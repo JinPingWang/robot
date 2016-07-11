@@ -129,7 +129,7 @@ public class RoughlyMatch {
         int length = matches.matchedAnswers.size();
         if (length > 0) {
             for (int i = 0; i < length; ++i) {
-                AnswerBean answerBean = new AnswerBean("", "", new ArrayList<String>(), new ArrayList<>());
+                AnswerBean answerBean = new AnswerBean("", "", new ArrayList<String>(), new ArrayList<String>());
                 answerBean.setQStr(matches.matchedQuestions.get(i));
                 answerBean.setAStr(matches.matchedAnswers.get(i));
                 answerBean.setMatchedOntoNum(matches.matchedOntoNums.get(i));
@@ -153,12 +153,12 @@ public class RoughlyMatch {
         System.setProperty("java.util.Arrays.useLegacyMergeSort", "true");
         Collections.sort(answerBeans);
         Collections.reverse(answerBeans);
-        System.out.println("---------------------------------");
-        System.out.println(questionBean.toString());
-        for (AnswerBean ans: answerBeans) {
-            System.out.println(ans.toString());
-        }
-        System.out.println("---------------------------------");
+//        System.out.println("---------------------------------");
+//        System.out.println(questionBean.toString());
+//        for (AnswerBean ans: answerBeans) {
+//            System.out.println(ans.toString());
+//        }
+//        System.out.println("---------------------------------");
         return matches;
     }
 
@@ -177,7 +177,7 @@ public class RoughlyMatch {
             } catch (DocumentException e) {
                 e.printStackTrace();
             }
-            System.out.println(matches.toString());
+//            System.out.println(matches.toString());
         }
 
     }

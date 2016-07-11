@@ -68,10 +68,10 @@ public class BestAnswer {
 		ArrayList<AnswerBean> first_answers = new ArrayList<AnswerBean>();
 		try{
 			MatlabInput = new MWNumericArray(Matrix, MWClassID.DOUBLE);
-			System.out.println("输入Matlab的ANN训练模型的矩阵为： " + MatlabInput);
+//			System.out.println("输入Matlab的ANN训练模型的矩阵为： " + MatlabInput);
 			myAnn = new MatlabBP();
 			result = myAnn.predict0703(1,MatlabInput);
-	   	    System.out.println("经过Matlab的ANN模型计算后，结果为： " + result[0]);
+//	   	    System.out.println("经过Matlab的ANN模型计算后，结果为： " + result[0]);
 	   	    for(int i=1;i<=answer_num;i++){
 	       	    double res = ((MWNumericArray) result[0]).getDouble(i);
 		       	    if(res > MAX){
@@ -87,9 +87,9 @@ public class BestAnswer {
 	   	    	}
 	   	    }
 	   	    /**********打印中间List,看看结果***********/
-	   	    for(int i=0;i<match_rate.size();i++){
-	   	    	System.out.println(match_rate.get(i) + "   " + first_answers.get(i).getQStr() + "   " + first_answers.get(i).getAStr());
-	   	    }
+//	   	    for(int i=0;i<match_rate.size();i++){
+//	   	    	System.out.println(match_rate.get(i) + "   " + first_answers.get(i).getQStr() + "   " + first_answers.get(i).getAStr());
+//	   	    }
 	   	    /**********对匹配度进行排序***********/
 //	   	 quickSort(array,0,array.length-1);
 	   	    

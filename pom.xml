@@ -40,6 +40,28 @@
 	    <version>5.1.30</version>
 	</dependency>
 <!-- 	<dependency> -->
+<!-- 	    <groupId>edu.uestc.robot</groupId> -->
+<!-- 	    <artifactId>BPModel</artifactId> -->
+<!-- 	    <version>1.0.0</version> -->
+<!-- 	</dependency> -->
+<!-- 	<dependency> -->
+<!-- 	    <groupId>edu.uestc.robot</groupId> -->
+<!-- 	    <artifactId>IKAnalyzer</artifactId> -->
+<!-- 	    <version>1.0.0</version> -->
+<!-- 	</dependency> -->
+<!-- 	<dependency> -->
+<!-- 	    <groupId>edu.uestc.robot</groupId> -->
+<!-- 	    <artifactId>javabuilder</artifactId> -->
+<!-- 	    <version>1.0.0</version> -->
+<!-- 	</dependency> -->
+<!-- 	<dependency> -->
+<!-- 	    <groupId>edu.uestc.robot</groupId> -->
+<!-- 	    <artifactId>lucene-core</artifactId> -->
+<!-- 	    <version>4.6.1</version> -->
+<!-- 	</dependency> -->
+
+
+<!-- 	<dependency> -->
 <!-- 	    <groupId>org.springframework</groupId> -->
 <!-- 	    <artifactId>spring-webmvc</artifactId> -->
 <!-- 	    <version>${spring.version}</version> -->
