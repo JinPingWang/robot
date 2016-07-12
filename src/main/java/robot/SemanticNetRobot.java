@@ -52,6 +52,7 @@ public class SemanticNetRobot implements Robot {
 		Integer count = (Integer)userSession.getAttribute("count"); 
 		if(count == null){
 			userSession.setAttribute("count", 1);
+			count = 1;
 		}
 		else{
 			userSession.setAttribute("count", count+1);
@@ -89,7 +90,8 @@ public class SemanticNetRobot implements Robot {
 		 */
 		String result = "";
 		if(answerBeans.size() == 0){
-			return count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession) : TaoDian.weiXinString; 
+			result = count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession)+"\n"+TaoDian.getTaoDian(1) : TaoDian.getTaoDian(2); 
+			return result;
 		}
 		else{
 			if(lastOntology != null){
@@ -109,11 +111,9 @@ public class SemanticNetRobot implements Robot {
 		 * 五：将答案返回
 		 */
 		if(result.length() == 0){
-			return count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession) : TaoDian.phoneString; 
+			result = count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession)+"\n"+TaoDian.getTaoDian(1) : TaoDian.getTaoDian(2);
 		}
-		else{
-			return result;
-		}
+		return result;
 	}
 
 

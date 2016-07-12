@@ -40,7 +40,6 @@ public class TuringRobot implements Robot {
 		if(reply != null){
 			return reply;
 		}
-
 		TuringRequestBean turingBean = new TuringRequestBean("ae35e0925aa475708cd0f1892ac8c244", content, userSession.getId());
 		Json json = new Json();
 		String jsonString = json.getJson(turingBean);
