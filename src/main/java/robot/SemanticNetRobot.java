@@ -84,26 +84,11 @@ public class SemanticNetRobot implements Robot {
 		}
 		else{
 			if(lastOntology != null){
-//				try {
-//					Matches matches = roughlyMathc.roughlyMatch(content, questionBean, answerBeans);
-//					List<AnswerBean> answerBeanList = BestAnswer.getBestAnswerArrayList(questionBean, answerBeans, 0.2d);
-//					result = getAnswer(lastOntology, answerBeanList);
-//				} catch (DocumentException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
 				List<AnswerBean> answerBeanList = BestAnswer.getBestAnswerArrayList(questionBean, answerBeans, 0.5d);
 				result = getAnswer(lastOntology, answerBeanList);
 			}
 			else{
 				result = BestAnswer.getBestAnswerString(questionBean, answerBeans);
-//				try {
-//					Matches matches = roughlyMathc.roughlyMatch(content, questionBean, answerBeans);
-//					result = BestAnswer.getBestAnswerString(questionBean, answerBeans);
-//				} catch (DocumentException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
 			}
 		}
 			

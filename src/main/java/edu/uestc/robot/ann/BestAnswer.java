@@ -13,9 +13,7 @@ import com.mathworks.toolbox.javabuilder.MWNumericArray;
 
 import BPModel.MatlabBP;
 import edu.uestc.robot.nlp.roughlymatch.AnswerBean;
-import edu.uestc.robot.nlp.roughlymatch.Matches;
 import edu.uestc.robot.nlp.roughlymatch.QuestionBean;
-import edu.uestc.robot.nlp.roughlymatch.RoughlyMatch;
 
 public class BestAnswer {
 	public static int getBestAnswerIndex(double[][] Matrix){
