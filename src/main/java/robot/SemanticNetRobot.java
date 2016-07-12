@@ -14,6 +14,7 @@ import edu.uestc.robot.nlp.roughlymatch.AnswerBean;
 import edu.uestc.robot.nlp.roughlymatch.Matches;
 import edu.uestc.robot.nlp.roughlymatch.QuestionBean;
 import edu.uestc.robot.nlp.roughlymatch.RoughlyMatch;
+import util.TaoDian;
 
 public class SemanticNetRobot implements Robot {
 	HashMap<String, String> contentMapReply;
@@ -48,6 +49,14 @@ public class SemanticNetRobot implements Robot {
 		 * 一：得到上一个问题的本体，并保存语义网络需要的数据
 		 */
 		List<String> lastOntology = (List<String>) userSession.getAttribute("lastOntology");
+		Integer count = (Integer)userSession.getAttribute("count"); 
+		if(count == null){
+			userSession.setAttribute("count", 1);
+		}
+		else{
+			userSession.setAttribute("count", count+1);
+		}
+		
 		{
 			RoughlyMatch roughlyMathc = new RoughlyMatch();
 			QuestionBean questionBean = new QuestionBean("", new ArrayList<String>());
@@ -59,7 +68,7 @@ public class SemanticNetRobot implements Robot {
 				e.printStackTrace();
 			}		
 			List<String> ontology = questionBean.getQOntology();
-			userSession.setAttribute("lastOntology", ontology);			
+			userSession.setAttribute("lastOntology", ontology);
 		}
 		
 		/**
@@ -80,7 +89,7 @@ public class SemanticNetRobot implements Robot {
 		 */
 		String result = "";
 		if(answerBeans.size() == 0){
-			return "请问您的微信号是？因为我这边是在线客服 信息掌握的不是很全面 可以安排专业顾问给您详细推荐一下"; 
+			return count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession) : TaoDian.weiXinString; 
 		}
 		else{
 			if(lastOntology != null){
@@ -100,7 +109,7 @@ public class SemanticNetRobot implements Robot {
 		 * 五：将答案返回
 		 */
 		if(result.length() == 0){
-			return "您好！您可以留下您的联系方式 稍后我这边会转接到相关部门 如果有需要会给您打电话";
+			return count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession) : TaoDian.phoneString; 
 		}
 		else{
 			return result;
