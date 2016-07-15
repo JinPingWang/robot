@@ -23,7 +23,6 @@ public class Json {
 		gen.close();
 		jsonString = sw.toString();
 		sw.close();
-		System.out.println(jsonString);
 		return jsonString;
 	}
 	

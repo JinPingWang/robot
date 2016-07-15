@@ -116,8 +116,6 @@ public class SemanticNetRobot implements Robot {
 		return result;
 	}
 
-
-	
 	private String getAnswer(List<String> lastOntology, List<AnswerBean> answerBeanList){
 		int countMax=0;
 		int index = 0;
