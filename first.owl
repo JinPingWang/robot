@@ -1,0 +1,1839 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#"
+     xml:base="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#AisLocatein -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#AisLocatein"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#PisLocatein -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#PisLocatein">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#allow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#allow">
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#not_allow"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#consultation_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#consultation_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#first_pay -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#first_pay"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasAcreage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasAcreage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasPayment_method -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasPayment_method"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasProperty_right -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasProperty_right">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasReturn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasReturn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasService"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasprice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasprice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isNearby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isNearby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isStyle_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isStyle_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#is_houseStyle_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#is_houseStyle_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#is_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#is_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#not_allow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#not_allow"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#F2签证 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#F2签证">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#签证类型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#F5签证 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#F5签证">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#签证类型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海分公司 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海分公司">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#分公司"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海活动 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海活动">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#活动"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#东京 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#东京">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#日本"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#东南区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#东南区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#墨尔本"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#东方广场 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#东方广场">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中国 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中国">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中学 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中学">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#学区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#主推 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#主推">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#项目"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#二手房 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#二手房">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#交通 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#交通">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#产权 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#产权">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#产权类型 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#产权类型">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#产权"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#京都 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#京都">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#日本"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#休斯顿 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#休斯顿">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#伦敦 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#伦敦">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#英国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#伦敦UCL大学 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#伦敦UCL大学">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#大学"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#伦敦"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#全款 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#全款">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#支付方式"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasprice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#公交 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#公交">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#交通"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#公司 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#公司">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#PisLocatein"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#公寓 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#公寓">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#分公司 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#分公司">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#公司"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#利息 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#利息">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasprice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#别墅 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#别墅">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#加州 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#加州">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#加拿大 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#加拿大">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#first_pay"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#%10"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包回购 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包回购">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#服务"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包租 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包租">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#服务"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasReturn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资回报"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包租二十年 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包租二十年">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包租"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京总部 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京总部">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#总部"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#东方广场"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京活动 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京活动">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#活动"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#华人区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#华人区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#卖使用权 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#卖使用权">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#产权类型"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#永久产权"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#合作 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#合作">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#项目"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山活动 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山活动">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#活动"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#商业区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#商业区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#圣地亚哥 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#圣地亚哥">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#圣胡安 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#圣胡安">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#洛杉矶"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasprice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地铁 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地铁">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#交通"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#塞浦路斯 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#塞浦路斯">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#墨尔本 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#墨尔本">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#澳大利亚"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#墨尔本大学 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#墨尔本大学">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#大学"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#多伦多 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#多伦多">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#加拿大"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#大学 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#大学">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#学区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#大阪 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#大阪">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#日本"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津活动 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津活动">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#活动"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#奥兰多 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#奥兰多">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#奥运村 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#奥运村">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#悉尼"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#学区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#学区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#小学 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#小学">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#学区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#小户型 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#小户型">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#户型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#山西路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#山西路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#皇姑区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#巴塞罗那 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#巴塞罗那">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#西班牙"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#市中心 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#市中心">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#布里斯班 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#布里斯班">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#澳大利亚"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#帕萨迪纳 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#帕萨迪纳">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#年 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#年">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#时间"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州活动 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州活动">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#活动"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#度假 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#度假">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#自住"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#总部 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#总部">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#公司"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#悉尼 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#悉尼">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#澳大利亚"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#户型 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#户型">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#技术移民 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#技术移民">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#移民"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#项目"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasReturn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资回报"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isNearby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#学区"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资回报 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资回报">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasprice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资移民 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资移民">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#移民"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#拉萨尔学院 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#拉萨尔学院">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#大学"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#多伦多"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#支付方式 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#支付方式">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#收益率 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#收益率">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资回报"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasprice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#新房 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#新房">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#新西兰 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#新西兰">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#旅游 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#旅游">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#自住"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#日 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#日">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#时间"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#日本 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#日本">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#旧金山 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#旧金山">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#时间 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#时间"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#曼哈顿 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#曼哈顿">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#曼谷 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#曼谷">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#泰国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#月 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#月">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#时间"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#服务 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#服务">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#期房 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#期房">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#新房"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#棕榈泉 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#棕榈泉">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#波士顿"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#永久产权 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#永久产权">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#产权类型"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasTime"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#时间"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#沈阳 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#沈阳">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#波士顿 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#波士顿">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#泰国 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#泰国">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#洛杉矶 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#洛杉矶">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#活动 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#活动">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#济州岛 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#济州岛">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#韩国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#中国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳分公司 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳分公司">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#分公司"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#温哥华 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#温哥华">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#加拿大"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasprice"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#温布利 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#温布利">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#伦敦"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#澳大利亚 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#澳大利亚">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#allow"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资移民"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#allow"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#购房移民"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#not_allow"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#技术移民"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#现房 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#现房">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#新房"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#留学 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#留学">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#自住"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#皇姑区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#皇姑区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#沈阳"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#看房 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#看房">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#服务"/>
+        <rdfs:comment>支付往返机票</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#移民 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#移民">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#自住"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#税 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#税">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#空置率 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#空置率">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#签证类型 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#签证类型">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#产权"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#精装 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#精装">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#纽约 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#纽约">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#联排 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#联排">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#自住 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#自住">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#项目"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#英国 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#英国">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#蒙特利尔 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#蒙特利尔">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#加拿大"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#西班牙 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#西班牙">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#西雅图 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#西雅图">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#购房移民 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#购房移民">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#移民"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#支付方式"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款期限 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款期限">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasTime"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#时间"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款条件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款条件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#近郊 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#近郊">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#郊区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#远郊 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#远郊">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#郊区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#郊区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#郊区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#酒店 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#酒店">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#银行无不良记录 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#银行无不良记录">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款条件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#靠海 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#靠海">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#面积 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#面积">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房产"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#韩国 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#韩国">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#项目 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#项目">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasProperty_right"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#产权"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isNearby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasAcreage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#面积"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasPayment_method"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#支付方式"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasService"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#服务"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasTime"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#时间"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasprice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isStyle_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#isLocatein"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#首付 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#首付">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#hasprice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#马来西亚 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#马来西亚">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#地区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#%10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#%10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#首付"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#%40 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#%40">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#首付"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#1房 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#1房">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#户型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#2房 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#2房">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#户型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#3房 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#3房">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#户型"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#4房 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#4房">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#户型"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#AX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#AX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#主推"/>
+        <hasService rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包租包回购"/>
+        <hasprice rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#p"/>
+        <isLocatein rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#澳大利亚"/>
+        <isNearby rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#location"/>
+        <isStyle_of rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Hstyle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#面积"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Day -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Day">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#日"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Hstyle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Hstyle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房型"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Month -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Month">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#月"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Return -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Return">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资回报"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Tax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Tax">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#税"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#UX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#UX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#主推"/>
+        <hasService rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包租包回购"/>
+        <hasprice rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#p"/>
+        <isLocatein rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+        <isNearby rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#location"/>
+        <isStyle_of rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Hstyle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#Year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#年"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#layout -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#layout">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#户型"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#location -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#location">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#位置"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#p">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#房价"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#pr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#pr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#产权"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海分公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海分公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海分公司"/>
+        <PisLocatein rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海活动 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海活动">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海活动"/>
+        <AisLocatein rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#上海"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包租包回购 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#包租包回购">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#服务"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京总部 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京总部">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京总部"/>
+        <PisLocatein rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京活动 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京活动">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京活动"/>
+        <AisLocatein rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#北京"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#合作 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#合作">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#合作"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山活动 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山活动">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山活动"/>
+        <AisLocatein rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#唐山"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津活动 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津活动">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津活动"/>
+        <AisLocatein rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#天津"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州活动 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州活动">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州活动"/>
+        <AisLocatein rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#广州"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#技术移民 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#技术移民">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#技术移民"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资移民 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资移民">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资移民"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳分公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳分公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳分公司"/>
+        <PisLocatein rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#深圳"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#澳大利亚 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#澳大利亚">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#澳大利亚"/>
+        <allow rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#技术移民"/>
+        <allow rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#投资移民"/>
+        <not_allow rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#购房移民"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#美国"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#购房移民 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#购房移民">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#购房移民"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款全款均可 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#贷款全款均可">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2016/5/untitled-ontology-21#支付方式"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
