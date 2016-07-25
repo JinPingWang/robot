@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<base target="_blank">
+		<meta name="viewport" content="width=deice-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/robot/robot.css">
+	    <script src="js/jquery-2.1.4.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/robot/robot.js"></script>
+	</head>
+	<body>
+		<div class="container" id="myContainer">
+			<div class="row">
+				<div id="topColLeft" class="col-md-1 topColHeight"></div>
+				<div id="topColMiddle" class="col-md-10 topColHeight">
+					<div class="col-md-3"  style="padding-top: 2px;"><a href="http://www.haiwailoushi.com/"><img src="img/logo.png" ></a></div>
+					<div id="servicePhone" class="col-md-9 text-right" style="padding-top: 10px;"><span style="font-size: 18px;">全球服务热线：400-606-5355</span></div>
+				</div>
+				<div id="topColRight" class="col-md-1 topColHeight"></div>
+			</div>	
+        	<div class="row">
+        		<div class="col-md-1"></div>        		
+        		<div class="col-md-7">
+        			<div class="row" id="talkWindow">
+        				<div class="col-md-12" id="talkWindowCol">
+<!-- 	        				<p class="sysfont">05-25 17:41:57&nbsp;&nbsp;万国置地-客服正在和您进行对话..</p> -->
+	
+<!-- 							<p class="clientnamefont"><b>王-北京-张先生-温哥华</b> 05-25 17:42:21</p> -->
+<!-- 							<div class="clientfont" style="MARGIN-LEFT: 5px"> -->
+<!-- 								<p>你好，请问温哥华的房子价格在多少钱？</p> -->
+<!-- 							</div> -->
+																						
+<!-- 							<p class="clientnamefont"><b>王-北京-张先生-温哥华</b> 05-25 17:42:21</p> -->
+<!-- 							<div class="clientfont" style="MARGIN-LEFT: 5px"> -->
+<!-- 								<p>你猜我猜不猜？</p> -->
+<!-- 							</div> -->
+							
+<!-- 							<p class="operatornamefont"><b>wgbj006</b> 05-25 17:42:36</p> -->
+<!-- 							<div class="operatorfont" style="MARGIN-LEFT: 5px"> -->
+<!-- 								<p>你猜我猜不猜你猜</p> -->
+<!-- 							</div> -->
+							
+<!-- 							<p class="operatornamefont"><b>wgbj006</b> 05-25 17:42:49</p> -->
+<!-- 							<div class="operatorfont" style="MARGIN-LEFT: 5px">																				 -->
+<!-- 								<p class="sysfont">05-25 18:01:14&nbsp;&nbsp;对话窗口被关闭，对话已结束。</p> -->
+<!-- 							</div> -->
+						</div>	
+        			</div>
+        			
+        			<div class="row" id="inputTextWindow">
+       				    <div class="input-group">
+					      <input type="text" class="form-control" placeholder="请输入..." id="inputText">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default btn-primary" type="button" id="sendMsgButton">发送</button>
+					      </span>
+					    </div>
+        			</div>
+        		</div>
+        		
+        		<div class="col-md-3" id="showWindow">
+        			<div class="col-md-12 colImg"><a href="http://www.haiwailoushi.com/huodong/63/index.jsp"><img src="img/1.jpg" /></a></div>
+        			<div class="col-md-12 colImg"><a href="http://www.haiwailoushi.com/huodong/63/index.jsp"><img src="img/2.jpg" /></a></div>
+        			<div class="col-md-12 colImg"><a href="http://www.haiwailoushi.com/huodong/63/index.jsp"><img src="img/3.jpg" /></a></div>
+        			<div class="row">
+	        			<div class="col-md-4 colIconImg" align="center"><img title="全球服务热线：400-606-5355" class="iconImg" src="img/61.png"/></div>
+	        			<div class="col-md-4 colIconImg" align="center"><img title="咨询邮箱：info@housebuyer.cn" class="iconImg" src="img/62.png" /></div>
+	        			<div class="col-md-4 colIconImg" align="center"><img title="北京 上海 深圳" class="iconImg" src="img/63.png" /></div>
+        			</div>
+        		</div>
+        		<div class="col-md-1"></div>	
+        	</div>
+        </div>
+        
+ 		<!-- visibility: hidden -->
+ 		<div style="display: none" id="customerName">王-北京-张先生-温哥华</div>
+ 		<button type="button" class="btn btn-primary" id="sendMsgButtonAlert" data-toggle="modal" data-target=".bs-example-modal-sm" style="display:none">Small modal</button>
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  <div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		          <h3 class="modal-title" id="mySmallModalLabel">温馨提示</h3>		    		
+		    	</div>
+		    	
+		        <div class="modal-body">
+		          	<h4>亲，输入的内容不能为空哦。</h4>
+		        </div>
+		    </div>
+		  </div>
+		</div>	
+	</body>
+</html>
