@@ -61,7 +61,8 @@ public class DataSet {
     public void hasRecommend(List<Term> terms, Content content) {
         ArrayList<String> res = new ArrayList<String>();
         try {
-            InputStream inputStream = new FileInputStream("house.xml");
+//            InputStream inputStream = new FileInputStream("/house.xml");
+            InputStream inputStream = DataSet.class.getResourceAsStream("/house.xml");
             SAXReader saxReader = new SAXReader();
             Document root = saxReader.read(inputStream);
             List<Node> LINES = root.selectNodes("//LINE");
@@ -84,9 +85,7 @@ public class DataSet {
                     }
                 }
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (DocumentException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         content.setMatchedTags(res);

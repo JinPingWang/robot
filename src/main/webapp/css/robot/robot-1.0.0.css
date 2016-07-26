@@ -90,5 +90,11 @@ li {
 	padding-right: 0px;
 }
 
+pre {
+	background-color: #eff0f2; 
+	border:0px; 
+	height: 0px; 
+	margin-bottom: -15px;
+}
 
 

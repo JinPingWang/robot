@@ -137,7 +137,7 @@ public class Arq {
     	String m="";
     	String str="";
         FileManager.get().addLocatorClassLoader(Arq.class.getClassLoader());
-        Model model = FileManager.get().loadModel("first.owl");
+        Model model = FileManager.get().loadModel(Arq.class.getResource("/first.owl").getPath().toString());
 
         Query query = QueryFactory.create(s);
         QueryExecution qexec = QueryExecutionFactory.create(query, model);
@@ -228,7 +228,8 @@ public class Arq {
             factory.setIgnoringElementContentWhitespace(true);
             
             DocumentBuilder db=factory.newDocumentBuilder();
-            Document xmldoc=db.parse(new File("house.xml"));
+//            Document xmldoc=db.parse(new File("house.xml"));
+            Document xmldoc=db.parse(Arq.class.getResource("/house.xml").getFile());
             root=xmldoc.getDocumentElement();
             theBook=(Element) selectSingleNode("/root/LINE[tag=tag='"+s+"']", root);
             //output(theBook);

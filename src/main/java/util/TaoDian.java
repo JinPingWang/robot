@@ -21,6 +21,11 @@ public class TaoDian {
 		listFirst.add("我们会经常有活动的，方便留个电话吗？");
 		listFirst.add("能留个微信可以不？我们帮您备注一下，会定期推送最新资讯哦");
 		listFirst.add("我们会有促销活动，方便留个微信吗？");
+		listFirst.add(" ");
+		listFirst.add("  ");
+		listFirst.add("   ");
+		listFirst.add("    ");
+		listFirst.add("     ");
 		
 		listSecond.add("方便留个联系方式不？我让我们美女经理跟您详聊~");
 		listSecond.add("请问您的微信号是？因为我这边是在线客服 信息掌握的不是很全面 可以安排专业顾问给您详细推荐一下");

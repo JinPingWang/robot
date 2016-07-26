@@ -14,6 +14,8 @@ import edu.uestc.robot.nlp.roughlymatch.AnswerBean;
 import edu.uestc.robot.nlp.roughlymatch.Matches;
 import edu.uestc.robot.nlp.roughlymatch.QuestionBean;
 import edu.uestc.robot.nlp.roughlymatch.RoughlyMatch;
+import edu.uestc.robot.semantic.Arq;
+import util.Connect;
 import util.TaoDian;
 
 public class SemanticNetRobot implements Robot {
@@ -46,16 +48,26 @@ public class SemanticNetRobot implements Robot {
 		// TODO Auto-generated method stub
 		
 		/**
-		 * 一：得到上一个问题的本体，并保存语义网络需要的数据
+		 * 一
+		 * 1：得到上一个问题的本体，并保存语义网络需要的数据
+		 * 2：得到客服上一次的回答，用于判断客服是否问了顾客联系方式
+		 * 3：count用于统计与顾客的对话次数，如果超过一定的次数进行套电
+		 * 4：判断客服是否问顾客联系方式以及顾客是否有回答联系方式
 		 */
 		List<String> lastOntology = (List<String>) userSession.getAttribute("lastOntology");
+		String lastAnswer = (String) userSession.getAttribute("lastAnswer");
 		Integer count = (Integer)userSession.getAttribute("count"); 
+	
 		if(count == null){
 			userSession.setAttribute("count", 1);
 			count = 1;
 		}
 		else{
 			userSession.setAttribute("count", count+1);
+		}
+		
+		if(Connect.answerContainConnectString(lastAnswer) && Connect.contentContainConnectString(content)){
+			return "好的，稍候我们会有专门的客服联系您的。";
 		}
 		
 		{
@@ -90,8 +102,9 @@ public class SemanticNetRobot implements Robot {
 		 */
 		String result = "";
 		if(answerBeans.size() == 0){
-			result = count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession)+"\n"+TaoDian.getTaoDian(1) : TaoDian.getTaoDian(2); 
-			return result;
+//			result = count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession)+"\n"+TaoDian.getTaoDian(1) : TaoDian.getTaoDian(2);
+			result = count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession) : TaoDian.getTaoDian(2);
+			userSession.setAttribute("lastAnswer", result);
 		}
 		else{
 			if(lastOntology != null){
@@ -104,14 +117,27 @@ public class SemanticNetRobot implements Robot {
 		}
 			
 		/**
-		 * 四：如果最优答案为""，则调用刘爽黄为的主义网络，构造答案
+		 * 四：如果最优答案为""，则调用刘爽黄为的语义网络，构造答案
 		 */
+		String semanticResult = "";
+		try{
+			semanticResult = Arq.ARQ(content);
+		}
+		catch(Exception e){
+//			semanticResult = "";
+			System.out.println(e.getMessage());
+		}
+		if(!semanticResult.equals("")){
+			result = "语料库答案：" + result + "<pre></pre>" + "语义网络答案：" + semanticResult; 
+		}
 		
 		/**
 		 * 五：将答案返回
 		 */
 		if(result.length() == 0){
-			result = count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession)+"\n"+TaoDian.getTaoDian(1) : TaoDian.getTaoDian(2);
+//			result = count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession)+"\n"+TaoDian.getTaoDian(1) : TaoDian.getTaoDian(2);
+			result = count < TaoDian.maxCount ? TuringRobot.getInstance().getReply(content, userSession) : TaoDian.getTaoDian(2);			
+			userSession.setAttribute("lastAnswer", result);
 		}
 		return result;
 	}
