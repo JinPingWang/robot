@@ -11,7 +11,9 @@ public class Test02 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		TestClassLoader testClassLoader = new TestClassLoader();
-		testClassLoader.print();
 	}
+}
+
+class Test021{
+	public String s = "hello";
 }
