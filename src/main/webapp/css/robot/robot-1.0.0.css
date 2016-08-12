@@ -5,7 +5,10 @@ body {
 	border: 0px;font-family: 微软雅黑; 
 	font-size: 12px;
 	background-color: #ababab;
-	scrollbar-arrow-color:yellow;scrollbar-base-color:lightsalmon
+	scrollbar-arrow-color:yellow;scrollbar-base-color:lightsalmon;
+/* 	background-image: url(/robot/img/万国置地4.png); */
+	background-repeat: repeat;
+	background-size: 50%;
 }
 td {
 	font-size: 12px;
@@ -41,7 +44,7 @@ li {
 	height: 50px;
 }
 
-#topCol {
+#topColMiddle {
 	background-color: #2c8ef1;
 	border: 1px solid #cccccc;
 	-webkit-border-radius: 10px 10px 0 0;
@@ -50,7 +53,8 @@ li {
 }
 
 #talkWindow {
-	height: 500px;
+/* 	height: 500px; */
+	height: 584px;
 	overflow: auto;
 	padding-top: 10px;
 	background-color: #eff0f2;
@@ -61,7 +65,8 @@ li {
 }
 
 #showWindow {
-	height: 535px;
+/* 	height: 535px;{ */
+	height: 619px;
 	background-color: #eff0f2;
 	border: 1px solid #cccccc;
 	border-top: 0px;
@@ -90,6 +95,18 @@ li {
 	padding-right: 0px;
 }
 
+#myContainer {
+/* 	padding-top: 5%; */
+	padding-top: 2%;
+}
+
+#inputTextWindow {	
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 0 0 0 10px;
+	-moz-border-radius: 0 0 0 10px;
+	border-radius: 0 0 0 10px;
+}
+
 pre {
 	background-color: #eff0f2; 
 	border:0px; 
@@ -97,4 +114,54 @@ pre {
 	margin-bottom: -15px;
 }
 
+@media screen and (max-width: 991px) {
+	#showWindow {
+		display: none;
+	}
+	
+	#servicePhone {
+		display: none;
+	}
+	
+	#topColLeft {
+		display: none:
+	}
+	
+	#topColRight {
+		display: none;
+	}
+	
+	#myContainer {
+		margin-top: -60px !important;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#showWindow {
+		display: none;
+	}
+	
+	#servicePhone {
+		display: none;
+	}
+	
+	#topColLeft {
+		display: none:
+	}
+	
+	#topColRight {
+		display: none;
+	}
+	
+	#myContainer {
+		margin-top: -60px !important;
+	}
+	
+/* 	#talkWindow { */
+/* 		height: 384px; */
+/* 		overflow: auto; */
+/* 		padding-top: 10px; */
+/* 		background-color: #eff0f2; */
+/* 	} */
+}
 
