@@ -3,30 +3,157 @@
 	<head>
 		<meta charset="utf-8">
 		<base target="_blank">
+		<meta name="viewport" content="width=deice-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-	    <link rel="stylesheet" href="css/robot/robot-1.0.0.css">
+	    <link rel="stylesheet" href="css/robot/robot.css">
+ 		<link rel="stylesheet" href="/robot/css/dropdown/jquery-ui.css">
+  		<link rel="stylesheet" href="/robot/css/dropdown/style.css">
 	    <script src="js/jquery-2.1.4.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
-	    <script src="js/robot/robot-1.0.0.js"></script>
+	    <script src="js/robot/robot.js"></script>
+  		<script src="/robot/js/dropdown/jquery-ui.js"></script>
+  		
+  		<script>
+		  $(function() {
+			  
+		    $( "#inputText" ).autocomplete({
+		      /**
+		       * 输入框内容改变时，向后台请求json数据
+		       */
+		      source: function( request, response ) {
+		        $.ajax({
+		          url: "search",
+		          dataType: "jsonp",
+		          data: {
+		            content: request.term
+		          },
+		          success: function( data ) {
+		            response( data );
+		          }
+		        });
+		      },
+		      
+		      //表示最少输入几个字符向后台发送数据
+		      minLength: 3,
+		      
+		      //设置下拉框向上
+		      position: { my: "left bottom", at: "left top", collision: "flip" },
+		      
+		      /**
+		       * 选择下拉框中的某一条数据时，触发事件，向后台发送客户的内容
+		       * 已经绑定entry
+		       */
+		      select: function( event, ui ) {
+		    	  
+		      },
+		      /**
+		       * 有一个问题是：如果在close中添加：
+		       * $("#inputText").val("");
+		       * 则如果没有选中，而直接点击发送按钮
+		       * 就会在改善按钮点击前，发送的内容被close给清空了。
+		       * 所以通过$("#inputText").select();
+		       * 将其内容选中即可
+		       */
+		      open: function() {
+		        $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+		      },
+		      close: function() {
+		        $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+		        $("#inputText").select();
+		      }
+		    });
+		  });
+		</script>
+  		
 	</head>
 	<body>
-		<div class="container-fluid" id="myContainer">
-    			<div class="row" id="talkWindow">
-    				<div class="col-md-12" id="talkWindowCol"></div>	
-    			</div>
-       			
-       			<div class="row" id="inputTextWindow">
-      				    <div class="input-group">
-				      <input type="text" class="form-control" placeholder="请输入..." id="inputText">
-				      <span class="input-group-btn">
-				        <button class="btn btn-default btn-primary" type="button" id="sendMsgButton">发送</button>
-				      </span>
-				    </div>
-       			</div>
+		<div class="container" id="myContainer">
+			<div class="row">
+				<div id="topColLeft" class="col-md-1 topColHeight"></div>
+				<div id="topColMiddle" class="col-md-10 topColHeight">
+					<div class="col-md-3"  style="padding-top: 2px;"><a href="http://www.haiwailoushi.com/"><img src="img/logo.png" ></a></div>
+					<div id="servicePhone" class="col-md-9 text-right" style="padding-top: 10px;"><span style="font-size: 18px;">全球服务热线：400-606-5355</span></div>
+				</div>
+				<div id="topColRight" class="col-md-1 topColHeight"></div>
+			</div>	
+        	<div class="row">
+        		<div class="col-md-1 col-"></div>        		
+        		<div class="col-md-7">
+        			<div class="row" id="talkWindow">
+        				<div class="col-md-12" id="talkWindowCol">
+
+						</div>	
+        			</div>
+        			
+        			<div class="row" id="inputTextWindow">
+       				    <div class="input-group">
+					      <input type="text" class="form-control" placeholder="请输入..." id="inputText">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default btn-primary" type="button" id="sendMsgButton">发送</button>
+					      </span>
+					    </div>
+        			</div>
+        		</div>
+        		
+        		<div class="col-md-3" id="showWindow">
+        			<div class="col-md-12 colImg"><a href="http://www.haiwailoushi.com/huodong/63/index.jsp"><img src="img/11.jpg" /></a></div>
+        			<div class="col-md-12 colImg"><a href="http://www.haiwailoushi.com/huodong/63/index.jsp"><img src="img/22.jpg" /></a></div>
+        			<div class="col-md-12 colImg"><a href="http://www.haiwailoushi.com/huodong/63/index.jsp"><img src="img/3.jpg" /></a></div>
+        			<div id="img4" class="col-md-12 colImg"><a href="http://www.haiwailoushi.com/huodong/63/index.jsp"><img src="img/44.jpg" /></a></div>
+        			<div class="row">
+	        			<div class="col-md-4 colIconImg" align="center"><img title="全球服务热线：400-606-5355" class="iconImg" src="img/61.png"/></div>
+	        			<div class="col-md-4 colIconImg" align="center"><img title="咨询邮箱：info@housebuyer.cn" class="iconImg" src="img/62.png" /></div>
+	        			<div class="col-md-4 colIconImg" align="center"><img title="北京 上海 深圳" class="iconImg" src="img/63.png" /></div>
+        			</div>
+        		</div>
+        		<div class="col-md-1"></div>	
+        	</div>
+        	<div class="row">
+        		<div class="col-md-1"></div>
+	        	<div class="col-md-10">
+	        		<div style="text-align: center; margin-top: 15px; color: #FFF"><span id="belowFont">版权所有：万国置地（北京）房地产经纪有限公司 Copyright @ 2014 海外楼市 All Rights Reserved 京ICP备14009675号-2</span></div>
+	        		<div style="text-align: center; margin-top: 7px; color: #005EA7">
+		        		<a href="law.html" style="text-decoration:none;">《万国置地服务条款》</a>
+		        		<a href="help.html" style="text-decoration:none;">《万国置地--帮助说明》</a>
+	        		</div>
+        		</div>
+        		<div class="col-md-1"></div>
+        	</div>
         </div>
         
  		<!-- visibility: hidden -->
- 		<div style="display: none" id="customerName">王-北京-张先生-温哥华</div>
- 
+ 		<div style="display: none" id="customerName">我</div>
+ 		<button type="button" class="btn btn-primary" id="sendMsgButtonAlert" data-toggle="modal" data-target=".bs-example-modal-sm" style="display:none">Small modal</button>
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  <div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		          <h3 class="modal-title" id="mySmallModalLabel">温馨提示</h3>		    		
+		    	</div>
+		    	
+		        <div class="modal-body">
+		          	<h4>亲，输入的内容不能为空哦。</h4>
+		        </div>
+		    </div>
+		  </div>
+		</div>	
 	</body>
+    <script>
+		var height = $(window).height()*0.73;
+		var width = $(window).width();
+		if(width < 650){
+			$("#talkWindow").css("height", height);
+		}
+		
+		var height = $(window).height();
+		if(height < 775){
+			$("#talkWindow").css("height", 460);
+			$("#img4").css("display", "none");
+			$("#showWindow").css("height", 496);
+		}
+		if(width < 650){
+			$("#talkWindow").css("height", height*0.73);
+		}
+    </script>
 </html>
