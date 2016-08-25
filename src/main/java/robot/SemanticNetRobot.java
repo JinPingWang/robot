@@ -125,6 +125,7 @@ public class SemanticNetRobot implements Robot {
 		}
 		catch(Exception e){
 //			semanticResult = "";
+			
 			System.out.println(e.getMessage());
 		}
 		if(!semanticResult.equals("")){
