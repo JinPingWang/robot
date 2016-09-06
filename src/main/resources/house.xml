@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <LINE>
+  <tag>UX</tag>
+  <name>棕榈泉</name>
+  <p>50万 美元</p>
+  <layouot>小户型</layouot>
+  <Hstyle>公寓</Hstyle>
+  <location>学区房 超市</location>
+  <Return>20%</Return>>
+ </LINE>
+ <LINE>
+ <tag>EX</tag>
+ <name>英国项目</name>
+ <p>25万 英镑</p>
+ </LINE>
+ <LINE>
+ <tag>SX</tag>
+ <name>圣胡安</name>
+ </LINE>
+ <LINE>
+ <tag>CX</tag>
+ <name>湖畔</name>
+ <layout>1房 2房 3房</layout>
+ <p>35万 加币</p>
+ </LINE>
+ 
+ 
+ <LINE>
+ <tag>GT</tag>
+ <T>5月21号</T>
+ </LINE>>
+</root>
