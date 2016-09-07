@@ -33,8 +33,7 @@ public class SearchEngine extends HttpServlet {
 		
 		response.setCharacterEncoding("UTF-8");
 		PrintWriter out =response.getWriter();
-
-		
+	
 //		String ss[] = new String[]{"New Baltimore, MI, United States","New Baltimore, NY, United States","New Baltimore, PA, United States","New Bavaria, OH, United States"};
 //		Json json = new Json();
 //		out.write(callback+ "(" + json.getJson(ss) + ")");
