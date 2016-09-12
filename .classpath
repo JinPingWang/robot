@@ -28,9 +28,9 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Administrator/Desktop/chengqiangjar/BPModel.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/Desktop/chengqiangjar/IKAnalyzer2012FF_u1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/Desktop/chengqiangjar/javabuilder.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/Desktop/chengqiangjar/lucene-core-4.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Desktop/temp/自然语言处理/chengqiangjar/BPModel.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Desktop/temp/自然语言处理/chengqiangjar/IKAnalyzer2012FF_u1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Desktop/temp/自然语言处理/chengqiangjar/javabuilder.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Desktop/temp/自然语言处理/chengqiangjar/lucene-core-4.6.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
