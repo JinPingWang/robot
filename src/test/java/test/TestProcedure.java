@@ -20,7 +20,6 @@ public class TestProcedure {
 		mysqlProperties.load(in);
 		
 		String drivers = mysqlProperties.getProperty("jdbc.drivers");
-
 		System.setProperty("jdbc.drivers", drivers);
 		
 		String url = mysqlProperties.getProperty("jdbc.url");
