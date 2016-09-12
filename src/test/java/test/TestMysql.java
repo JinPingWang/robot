@@ -19,6 +19,7 @@ public class TestMysql {
 	public static void main(String argv[]) throws IOException {
 		Properties mysqlProperties = new Properties();
 		FileInputStream in = new FileInputStream(TestProperty.class.getResource("/mysql.properties").getPath());
+		
 		mysqlProperties.load(in);
 		
 		String drivers = mysqlProperties.getProperty("jdbc.drivers");
