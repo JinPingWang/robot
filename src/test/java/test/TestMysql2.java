@@ -36,6 +36,7 @@ public class TestMysql2 {
 			}
 			
 			Statement stat2 = conn.createStatement();
+			
 			ResultSet result2 = stat.executeQuery("select * from robot");
 			while(result2.next()){
 				System.out.println(result2.getInt(1)+"\t"+result2.getString(2)+"\t"+result2.getString(3));
