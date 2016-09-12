@@ -7,6 +7,7 @@ import java.util.List;
 import org.junit.Test;
 
 public class TestIterator {
+	
 	@Test
 	public void test(){
 		List<Integer> list = new ArrayList<Integer>();
