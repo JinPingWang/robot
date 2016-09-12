@@ -23,7 +23,8 @@ public class TestConnection {
 		
 		String url = mysqlProperties.getProperty("jdbc.url");
 		String username = mysqlProperties.getProperty("jdbc.username");
-		String password = mysqlProperties.getProperty("jdbc.password");		
+		String password = mysqlProperties.getProperty("jdbc.password");	
+		
 		try{
 			Connection conn = DriverManager.getConnection(url, username, password);
 			conn.close();
