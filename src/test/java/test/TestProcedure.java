@@ -26,6 +26,7 @@ public class TestProcedure {
 		String url = mysqlProperties.getProperty("jdbc.url");
 		String username = mysqlProperties.getProperty("jdbc.username");
 		String password = mysqlProperties.getProperty("jdbc.password");		
+		
 		try{
 			Connection conn = DriverManager.getConnection(url, username, password);
 			CallableStatement callStat = conn.prepareCall("{call getContentFromRobotById(?, ?)}");
